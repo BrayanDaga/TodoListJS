@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+    <div class="container">
+        <div class="alert hidden">
+            Success
+        </div>
+        <header>
+            <div class="header-top">
+                <h1>TO-DOList</h1>
+                <div class="count-tasks">
+                    <div class="badge pri">
+                        Prioritario
+                        <span class="num-label" id="total-prio">0</span>
+                    </div>
+                    <div class="badge comun">
+                        Comun
+                        <span class="num-label" id="total-comun">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="tasks-totale">
+                    TOTALE:
+                    <span id="total-tasks"  class="num-label total-task">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <form  id="task-form">
+                <div class="form-fields">
+                    <input type="text" placeholder="Nome" id="name-field" required>
+                    <div class="form-group">
+                        <label for="priorita-check">Priorita?</label>
+                        <input type="checkbox" id="priorita-check" >
+                    </div>
+                </div>
+                <button type="submit" class="form-button">+</button>
+            </form>
+
+
+            <ul class="list-tasks">
+               
+            </ul>
+    </div>
+    </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
